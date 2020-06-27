@@ -166,29 +166,30 @@ module Capybara::Apparition
 
         # Chromium command line options
         # https://peter.sh/experiments/chromium-command-line-switches/
-        DEFAULT_BOOLEAN_OPTIONS = %w[
-          disable-background-networking
-          disable-background-timer-throttling
-          disable-breakpad
-          disable-client-side-phishing-detection
-          disable-default-apps
-          disable-dev-shm-usage
-          disable-features=site-per-process
-          disable-hang-monitor
-          disable-infobars
-          disable-popup-blocking
-          disable-prompt-on-repost
-          disable-sync
-          disable-translate
-          disable-session-crashed-bubble
-          metrics-recording-only
-          no-first-run
-          safebrowsing-disable-auto-update
-          enable-automation
-          password-store=basic
-          use-mock-keychain
-          keep-alive-for-test
-        ].freeze
+        # DEFAULT_BOOLEAN_OPTIONS = %w[
+        #   disable-background-networking
+        #   disable-background-timer-throttling
+        #   disable-breakpad
+        #   disable-client-side-phishing-detection
+        #   disable-default-apps
+        #   disable-dev-shm-usage
+        #   disable-features=site-per-process
+        #   disable-hang-monitor
+        #   disable-infobars
+        #   disable-popup-blocking
+        #   disable-prompt-on-repost
+        #   disable-sync
+        #   disable-translate
+        #   disable-session-crashed-bubble
+        #   metrics-recording-only
+        #   no-first-run
+        #   safebrowsing-disable-auto-update
+        #   enable-automation
+        #   password-store=basic
+        #   use-mock-keychain
+        #   keep-alive-for-test
+        DEFAULT_BOOLEAN_OPTIONS = []
+        # ].freeze
         # Note: --no-sandbox is not needed if you properly setup a user in the container.
         # https://github.com/ebidel/lighthouse-ci/blob/master/builder/Dockerfile#L35-L40
         # no-sandbox
